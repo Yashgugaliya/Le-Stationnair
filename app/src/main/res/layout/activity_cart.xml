@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativelayout1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/back">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+
+    <android.support.v7.widget.RecyclerView
+           android:id="@+id/recyle"
+           android:scrollbars="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_below="@id/toolbar"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+    <!--<include layout="@layout/cartdisplay"></include>-->
+</android.support.v7.widget.RecyclerView>
+<Button
+    android:id="@+id/placeorder"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:text="place order"
+    android:background="@drawable/custombutton"
+    android:textColor="@color/white"
+    android:layout_alignParentBottom="true"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:textSize="30dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

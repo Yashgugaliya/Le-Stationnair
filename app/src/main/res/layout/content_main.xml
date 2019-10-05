@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_place">
+
+    <EditText
+        android:id="@+id/to_address"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custonedittext"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="rakshithyadavmi6@gmail.com"
+        android:textSize="20dp"
+        android:layout_marginLeft="7dp"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+
+        android:textStyle="bold"
+        android:inputType="none"
+        android:focusable="false"
+        android:paddingVertical="15dp"/>
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custonedittext"
+        android:layout_below="@id/to_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Order details"
+        android:textSize="20dp"
+        android:focusable="false"
+        android:textStyle="bold"
+        android:inputType="none"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="7dp"
+        android:paddingVertical="15dp"/>
+
+    <EditText
+        android:id="@+id/body"
+        android:layout_width="340dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/subject"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custonedittext"
+        android:layout_centerHorizontal="true"
+        android:inputType="textMultiLine"
+        android:textSize="20sp"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="7dp"
+        android:paddingVertical="20dp"
+        android:hint="Compose mail"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:layout_weight="2"
+            android:id="@+id/attachmentData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Attachment"
+            android:clickable="false"
+            android:enabled="false"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/attachment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custombutton"
+            android:textColor="@color/white"
+            android:text="BROWSE"
+           />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/changeAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:hint="Change Account" />
+
+</LinearLayout>
